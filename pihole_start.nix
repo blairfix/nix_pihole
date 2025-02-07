@@ -1,19 +1,19 @@
 { config, pkgs, ... }:
 {
 
-    # start pihole
+    # start pihole_start
     #----------------------------------------
 
-    systemd.timers."pihole" = {
+    systemd.timers."pihole_start" = {
 	wantedBy = [ "timers.target" ];
 	timerConfig = {
 	    OnBootSec = "20";
 	    Persistent = "true";
-	    Unit = "pihole.service";
+	    Unit = "pihole_start.service";
 	};
     };
 
-    systemd.services."pihole" = {
+    systemd.services."pihole_start" = {
 	serviceConfig = {
 	    Type = "simple";
 	    User = "root";
