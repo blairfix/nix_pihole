@@ -26,7 +26,7 @@
 	    docker-compose
 	];
 	script = ''
-	    bash /home/blair/cloud_work/github/nix_pihole/pihole_start.sh
+	    bash /home/blair/nix_pihole/pihole_start.sh
 	    '';
     };
 }
