@@ -3,9 +3,5 @@
 # rebuild
 sudo nixos-rebuild --upgrade switch
 
-# make R profile
-trash /home/blair/.Rprofile
 
-Rscript -e 'writeLines( .libPaths(), "/home/blair/.libpaths.txt" )'
 
-echo '.libPaths( readLines("/home/blair/.libpaths.txt") )' > /home/blair/.Rprofile
