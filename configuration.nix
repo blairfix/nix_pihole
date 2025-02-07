@@ -7,6 +7,7 @@
 	    # configs
 	    ./packages.nix
 	    ./nvim.nix
+	    ./pihole_start.nix
 
 	];
 
