@@ -6,8 +6,9 @@
 
     systemd.timers."pihole_start" = {
 	wantedBy = [ "timers.target" ];
+	after = ["docker.service" "docker.socket"];
 	timerConfig = {
-	    OnBootSec = "20";
+	    OnBootSec = "60";
 	    Persistent = "true";
 	    Unit = "pihole_start.service";
 	};
@@ -16,7 +17,7 @@
     systemd.services."pihole_start" = {
 	serviceConfig = {
 	    Type = "simple";
-	    User = "root";
+	    User = "blair";
 	};
 
 	path = with pkgs; [ 
