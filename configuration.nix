@@ -33,6 +33,11 @@
 
     # ssh
     services.openssh.enable = true;
+    
+    # docker
+    virtualisation.docker.enable = true;
+
+
 
     # user account. Add password with ‘passwd’.
     users.users.blair = {

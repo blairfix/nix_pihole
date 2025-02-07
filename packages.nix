@@ -29,7 +29,6 @@
 	borgbackup
 
 	# containers
-	docker
 	docker-compose
 
 	];
