@@ -25,7 +25,7 @@
 	    docker-compose
 	];
 	script = ''
-	    bash /home/blair/pihole && docker-compose pull && docker-compose up -d
+	    bash cd /home/blair/pihole && docker-compose pull && docker-compose up -d
 	    '';
     };
 }
