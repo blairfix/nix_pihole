@@ -34,12 +34,17 @@
     services.tailscale.enable = true;
 
     # ssh
-    services.openssh.enable = true;
+    services.openssh = {
+	enable = true;
+	ports = [ 22 ];
+	settings = {
+	    PasswordAuthentication = false;
+	    PermitRootLogin = "no"; 
+	};
+    };
     
     # docker
     virtualisation.docker.enable = true;
-
-
 
     # user account. Add password with ‘passwd’.
     users.users.blair = {
