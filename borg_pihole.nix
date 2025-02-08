@@ -16,7 +16,7 @@
     systemd.services."borg_pihole" = {
 	serviceConfig = {
 	    Type = "simple";
-	    User = "pihole";
+	    User = "blair";
 	};
 	path = with pkgs; [ 
 	    bash
