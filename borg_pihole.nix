@@ -17,6 +17,8 @@
 	serviceConfig = {
 	    Type = "simple";
 	    User = "blair";
+	    WorkingDirectory = "/home/blair/bin";
+
 	};
 	path = with pkgs; [ 
 	    bash
