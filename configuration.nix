@@ -9,6 +9,7 @@
 	    ./nvim.nix
 	    ./timers/pihole_start.nix
 	    ./timers/borg_pihole.nix
+	    ./timers/update.nix
 
 	];
 
