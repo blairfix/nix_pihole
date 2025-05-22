@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# rebuild
+sudo nixos-rebuild --upgrade switch
+
+
+

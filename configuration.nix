@@ -7,10 +7,8 @@
 	    # configs
 	    ./packages.nix
 	    ./nvim.nix
-	    ./pihole_start.nix
-	    ./ladder_start.nix
-	    ./borg_pihole.nix
-	    #./caddy.nix
+	    ./timers/pihole_start.nix
+	    ./timers/borg_pihole.nix
 
 	];
 
