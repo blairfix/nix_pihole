@@ -7,8 +7,9 @@
 	    # configs
 	    ./packages.nix
 	    ./nvim.nix
-	    ./timers/pihole_start.nix
 	    ./timers/borg_pihole.nix
+	    ./timers/borg_pihole_nas.nix
+	    ./timers/pihole_start.nix
 	    ./timers/update.nix
 
 	];
