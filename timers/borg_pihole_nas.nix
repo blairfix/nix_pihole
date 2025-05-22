@@ -7,7 +7,7 @@
     systemd.timers."borg_pihole_nas" = {
 	wantedBy = [ "timers.target" ];
 	timerConfig = {
-	    OnCalendar = "*-*-*  *:19:00";
+	    OnCalendar= "*-*-* 03:40:00";
 	    Persistent = "true";
 	    Unit = "borg_pihole_nas.service";
 	};
