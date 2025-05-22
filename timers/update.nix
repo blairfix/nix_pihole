@@ -21,8 +21,6 @@
 
 	path = with pkgs; [ 
 	    bash
-	    docker
-	    docker-compose
 	];
 	script = ''
 	    bash /home/blair/bin/update.sh
